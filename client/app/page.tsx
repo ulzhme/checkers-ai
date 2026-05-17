@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { io, Socket } from 'socket.io-client';
 
-const socket: Socket = io('http://localhost:3001', { autoConnect: false });
+const socket: Socket = io('https://checkers-server-api.onrender.com', { autoConnect: false });
 
 export default function Home() {
   const [board, setBoard] = useState<string[][] | null>(null);

@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 👑 Checkers.AI — Платформа для умной игры в шашки
 
-## Getting Started
+**Уровень выполнения:** Великий 🚀
 
-First, run the development server:
+## 🎯 Что это такое?
+Checkers.AI — это не просто статичная доска, а полноценный прототип сервиса для игры в шашки в реальном времени с упором на обучение и соревновательный дух. Проект создан с использованием современных AI-инструментов.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 👤 Для кого это?
+Платформа создана для людей, которые хотят не просто убить время, а развить свое стратегическое мышление. Благодаря интеграции ИИ, она идеально подходит для новичков, которым нужна помощь в освоении тактики, а также для друзей, желающих провести быстрые дуэли на расстоянии. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 💎 Почему это ценно? (Уникальная ниша и бизнес-потенциал)
+1. **AI Coach (Интеграция Gemini):** Игроки не оставлены один на один с доской. В любой момент можно нажать кнопку «Совет от ИИ», и встроенный тренер (LLM) проанализирует текущее состояние игры и даст стратегическую подсказку (например, посоветует держать центр или обратить внимание на фланги). В будущем эта функция может стать платной (Pro-подписка).
+2. **Real-time Мультиплеер:** Мгновенная синхронизация ходов между двумя устройствами через WebSockets (Socket.io) без задержек.
+3. **Социальный слой (в перспективе):** Архитектура комнат позволяет легко внедрить региональные лидерборды (например, «Топ-10 стратегов из Алматы»).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠 Технический стек
+* **Frontend:** React, Next.js, Tailwind CSS (современный, адаптивный UI с градиентами и анимациями).
+* **Backend:** Node.js, Express, Socket.io (для обработки комнат и мгновенной передачи ходов).
+* **AI Интеграция:** `@google/generative-ai` (Gemini 1.5 Flash).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Как запустить локально
+1. `cd server` -> `npm install` -> `node index.js`
+2. `cd client` -> `npm install` -> `npm run dev`
