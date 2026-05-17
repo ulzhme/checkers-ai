@@ -15,7 +15,7 @@ const io = new Server(server, {
 });
 
 // Инициализируем ИИ (ключ будет браться из файла .env)
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "ВСТАВЬ_СЮДА_СВОЙ_КЛЮЧ_ЕСЛИ_НЕТ_ENV");
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 // Хранилище всех активных игр
 const rooms = {}; 
